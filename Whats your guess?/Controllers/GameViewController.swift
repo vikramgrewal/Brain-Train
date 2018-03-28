@@ -25,6 +25,8 @@ class GameViewController: UIViewController {
 
       setGameCards()
 
+      addListeners()
+
       // Do any additional setup after loading the view, typically from a nib.
 
    }
@@ -45,12 +47,28 @@ class GameViewController: UIViewController {
       }
 
       setCardColors()
+
    }
 
    func setCardColors()   {
       for index in 0...gameCardViews.count-1 {
-         gameCardViews[index].backgroundColor = game.cards[index].color
+         gameCardViews[index].backgroundColor = UIColor.gray
       }
+   }
+
+   func addListeners()  {
+
+      for view in gameCardViews {
+         let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(handleFlip))
+         view.addGestureRecognizer(gestureRecognizer)
+      }
+
+   }
+
+   @objc func handleFlip(_ recognizer:UITapGestureRecognizer) {
+      let view = recognizer.view!
+      let index = gameCardViews.index(of: view)!
+      view.backgroundColor = game.cards[index].color
    }
 
 
