@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  GameViewController.swift
 //  Whats your guess?
 //
 //  Created by Vikram Work/School on 3/25/18.
@@ -8,11 +8,22 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-   
+class GameViewController: UIViewController {
 
+   var game : Game!
+
+   @IBOutlet weak var stackOne: UIStackView!, stackTwo: UIStackView!,
+   stackThree: UIStackView!, stackFour: UIStackView!
+
+   var stacksArray : [UIStackView]!, gameCardViews : [UIView]!
+   
    override func viewDidLoad() {
+
       super.viewDidLoad()
+
+      game = Game()
+
+      setGameCards()
 
       // Do any additional setup after loading the view, typically from a nib.
 
@@ -23,6 +34,24 @@ class ViewController: UIViewController {
       // Dispose of any resources that can be recreated.
    }
 
+   func setGameCards()  {
+      stacksArray = [stackOne, stackTwo, stackThree, stackFour]
+      gameCardViews = [UIView]()
+
+      for stackView in stacksArray {
+         for cardView in stackView.subviews  {
+            gameCardViews.append(cardView)
+         }
+      }
+
+      setCardColors()
+   }
+
+   func setCardColors()   {
+      for index in 0...gameCardViews.count-1 {
+         gameCardViews[index].backgroundColor = game.cards[index].color
+      }
+   }
 
 
       
