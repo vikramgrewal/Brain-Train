@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5539E382A166955FB828F524 /* Pods_Whats_your_guess_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E64161F7B76C314CF454B1CE /* Pods_Whats_your_guess_.framework */; };
-		EC67A0D174F7C3C7347D6CC6 /* Pods_Whats_your_guess_UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8E777C34D225B6415327CC6 /* Pods_Whats_your_guess_UITests.framework */; };
+		37C8FCE327A022B74D3CD645 /* Pods_Whats_your_guess_UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C39B4DFCCE2EF1A5517802D /* Pods_Whats_your_guess_UITests.framework */; };
+		9901BB29EC6F999AC1E738F7 /* Pods_Whats_your_guess_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6F1AAF79F7A24CFB7E44249 /* Pods_Whats_your_guess_Tests.framework */; };
+		DA6A42BF52150FAA09500A85 /* Pods_Whats_your_guess_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30E8E2B51BCAB0D2F86345F7 /* Pods_Whats_your_guess_.framework */; };
 		F728ED9E206AD721008FFB88 /* GameCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F728ED9D206AD721008FFB88 /* GameCard.swift */; };
 		F74B3DE720682B4A000695BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74B3DE620682B4A000695BB /* AppDelegate.swift */; };
 		F74B3DE920682B4A000695BB /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74B3DE820682B4A000695BB /* GameViewController.swift */; };
@@ -17,10 +18,9 @@
 		F74B3DF120682B4A000695BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F74B3DEF20682B4A000695BB /* LaunchScreen.storyboard */; };
 		F74B3DFC20682B4A000695BB /* Whats_your_guess_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74B3DFB20682B4A000695BB /* Whats_your_guess_Tests.swift */; };
 		F74B3E0720682B4A000695BB /* Whats_your_guess_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74B3E0620682B4A000695BB /* Whats_your_guess_UITests.swift */; };
-		F74B3E1820682D19000695BB /* NumberBoard.xib in Resources */ = {isa = PBXBuildFile; fileRef = F74B3E1720682D19000695BB /* NumberBoard.xib */; };
-		F74B3E1A206830CE000695BB /* NumberBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74B3E19206830CE000695BB /* NumberBoard.swift */; };
-		F7C5A96C75D1B146BA65DE90 /* Pods_Whats_your_guess_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BFFF1A97024BE480345416E /* Pods_Whats_your_guess_Tests.framework */; };
+		F7817EA2206DCF8E00BAF5DF /* GameEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7817EA1206DCF8E00BAF5DF /* GameEntryViewController.swift */; };
 		F7D1570A2069F893001DE39E /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D157092069F893001DE39E /* Game.swift */; };
+		F7F14881206C995D0062816B /* GameFinishedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F14880206C995D0062816B /* GameFinishedViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,14 +41,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0BFFF1A97024BE480345416E /* Pods_Whats_your_guess_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Whats_your_guess_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		59E769C8EFB35C68456BB43B /* Pods-Whats your guess?.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Whats your guess?.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Whats your guess?/Pods-Whats your guess?.debug.xcconfig"; sourceTree = "<group>"; };
-		61B8517318E4637B892BFC7A /* Pods-Whats your guess?UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Whats your guess?UITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Whats your guess?UITests/Pods-Whats your guess?UITests.release.xcconfig"; sourceTree = "<group>"; };
-		81BE848B599679A89852C8DE /* Pods-Whats your guess?Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Whats your guess?Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Whats your guess?Tests/Pods-Whats your guess?Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		A8E777C34D225B6415327CC6 /* Pods_Whats_your_guess_UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Whats_your_guess_UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AA7797C84272AE19BE522617 /* Pods-Whats your guess?UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Whats your guess?UITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Whats your guess?UITests/Pods-Whats your guess?UITests.debug.xcconfig"; sourceTree = "<group>"; };
-		CF174AD2B57BAF6921AD0D75 /* Pods-Whats your guess?Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Whats your guess?Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Whats your guess?Tests/Pods-Whats your guess?Tests.release.xcconfig"; sourceTree = "<group>"; };
-		E64161F7B76C314CF454B1CE /* Pods_Whats_your_guess_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Whats_your_guess_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		23F5B092E2D4988A762E2920 /* Pods-Whats your guess?UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Whats your guess?UITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Whats your guess?UITests/Pods-Whats your guess?UITests.release.xcconfig"; sourceTree = "<group>"; };
+		30E8E2B51BCAB0D2F86345F7 /* Pods_Whats_your_guess_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Whats_your_guess_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C39B4DFCCE2EF1A5517802D /* Pods_Whats_your_guess_UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Whats_your_guess_UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6807AD991C87F1DD1B39AF91 /* Pods-Whats your guess?.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Whats your guess?.release.xcconfig"; path = "Pods/Target Support Files/Pods-Whats your guess?/Pods-Whats your guess?.release.xcconfig"; sourceTree = "<group>"; };
+		A65F4C02DDE2AD13812D7148 /* Pods-Whats your guess?UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Whats your guess?UITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Whats your guess?UITests/Pods-Whats your guess?UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B1EF1A33BEAB0D7D38CFD49A /* Pods-Whats your guess?.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Whats your guess?.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Whats your guess?/Pods-Whats your guess?.debug.xcconfig"; sourceTree = "<group>"; };
+		B6F1AAF79F7A24CFB7E44249 /* Pods_Whats_your_guess_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Whats_your_guess_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA5FF7DB92E5D88DA0213C9D /* Pods-Whats your guess?Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Whats your guess?Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Whats your guess?Tests/Pods-Whats your guess?Tests.release.xcconfig"; sourceTree = "<group>"; };
+		F560CE1002C2DC225EBC0A57 /* Pods-Whats your guess?Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Whats your guess?Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Whats your guess?Tests/Pods-Whats your guess?Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		F728ED9D206AD721008FFB88 /* GameCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCard.swift; sourceTree = "<group>"; };
 		F74B3DE320682B49000695BB /* Whats your guess?.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Whats your guess?.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F74B3DE620682B4A000695BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -63,10 +64,9 @@
 		F74B3E0220682B4A000695BB /* Whats your guess?UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Whats your guess?UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F74B3E0620682B4A000695BB /* Whats_your_guess_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Whats_your_guess_UITests.swift; sourceTree = "<group>"; };
 		F74B3E0820682B4A000695BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F74B3E1720682D19000695BB /* NumberBoard.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NumberBoard.xib; sourceTree = "<group>"; };
-		F74B3E19206830CE000695BB /* NumberBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberBoard.swift; sourceTree = "<group>"; };
+		F7817EA1206DCF8E00BAF5DF /* GameEntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameEntryViewController.swift; sourceTree = "<group>"; };
 		F7D157092069F893001DE39E /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
-		FAF91C19F8ED3E1C8259588B /* Pods-Whats your guess?.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Whats your guess?.release.xcconfig"; path = "Pods/Target Support Files/Pods-Whats your guess?/Pods-Whats your guess?.release.xcconfig"; sourceTree = "<group>"; };
+		F7F14880206C995D0062816B /* GameFinishedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameFinishedViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5539E382A166955FB828F524 /* Pods_Whats_your_guess_.framework in Frameworks */,
+				DA6A42BF52150FAA09500A85 /* Pods_Whats_your_guess_.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,7 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F7C5A96C75D1B146BA65DE90 /* Pods_Whats_your_guess_Tests.framework in Frameworks */,
+				9901BB29EC6F999AC1E738F7 /* Pods_Whats_your_guess_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,24 +90,34 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC67A0D174F7C3C7347D6CC6 /* Pods_Whats_your_guess_UITests.framework in Frameworks */,
+				37C8FCE327A022B74D3CD645 /* Pods_Whats_your_guess_UITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		073AB58D39413EDA8C4512A0 /* Pods */ = {
+		3D08848918E8F9CD87459107 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				59E769C8EFB35C68456BB43B /* Pods-Whats your guess?.debug.xcconfig */,
-				FAF91C19F8ED3E1C8259588B /* Pods-Whats your guess?.release.xcconfig */,
-				81BE848B599679A89852C8DE /* Pods-Whats your guess?Tests.debug.xcconfig */,
-				CF174AD2B57BAF6921AD0D75 /* Pods-Whats your guess?Tests.release.xcconfig */,
-				AA7797C84272AE19BE522617 /* Pods-Whats your guess?UITests.debug.xcconfig */,
-				61B8517318E4637B892BFC7A /* Pods-Whats your guess?UITests.release.xcconfig */,
+				B1EF1A33BEAB0D7D38CFD49A /* Pods-Whats your guess?.debug.xcconfig */,
+				6807AD991C87F1DD1B39AF91 /* Pods-Whats your guess?.release.xcconfig */,
+				F560CE1002C2DC225EBC0A57 /* Pods-Whats your guess?Tests.debug.xcconfig */,
+				CA5FF7DB92E5D88DA0213C9D /* Pods-Whats your guess?Tests.release.xcconfig */,
+				A65F4C02DDE2AD13812D7148 /* Pods-Whats your guess?UITests.debug.xcconfig */,
+				23F5B092E2D4988A762E2920 /* Pods-Whats your guess?UITests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		6B12E64A636933358CC51A74 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				30E8E2B51BCAB0D2F86345F7 /* Pods_Whats_your_guess_.framework */,
+				B6F1AAF79F7A24CFB7E44249 /* Pods_Whats_your_guess_Tests.framework */,
+				3C39B4DFCCE2EF1A5517802D /* Pods_Whats_your_guess_UITests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		F74B3DDA20682B49000695BB = {
@@ -117,8 +127,8 @@
 				F74B3DFA20682B4A000695BB /* Whats your guess?Tests */,
 				F74B3E0520682B4A000695BB /* Whats your guess?UITests */,
 				F74B3DE420682B49000695BB /* Products */,
-				073AB58D39413EDA8C4512A0 /* Pods */,
-				FA9D90EA38C7FF68178930BE /* Frameworks */,
+				3D08848918E8F9CD87459107 /* Pods */,
+				6B12E64A636933358CC51A74 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -167,8 +177,6 @@
 		F74B3E1420682C65000695BB /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				F74B3E1720682D19000695BB /* NumberBoard.xib */,
-				F74B3E19206830CE000695BB /* NumberBoard.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -177,6 +185,8 @@
 			isa = PBXGroup;
 			children = (
 				F74B3DE820682B4A000695BB /* GameViewController.swift */,
+				F7F14880206C995D0062816B /* GameFinishedViewController.swift */,
+				F7817EA1206DCF8E00BAF5DF /* GameEntryViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -199,16 +209,6 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		FA9D90EA38C7FF68178930BE /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				E64161F7B76C314CF454B1CE /* Pods_Whats_your_guess_.framework */,
-				0BFFF1A97024BE480345416E /* Pods_Whats_your_guess_Tests.framework */,
-				A8E777C34D225B6415327CC6 /* Pods_Whats_your_guess_UITests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -216,12 +216,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F74B3E0B20682B4A000695BB /* Build configuration list for PBXNativeTarget "Whats your guess?" */;
 			buildPhases = (
-				F0899D94EF4C52A3B9C1563A /* [CP] Check Pods Manifest.lock */,
+				56AF4F32DE7B1254E140187F /* [CP] Check Pods Manifest.lock */,
 				F74B3DDF20682B49000695BB /* Sources */,
 				F74B3DE020682B49000695BB /* Frameworks */,
 				F74B3DE120682B49000695BB /* Resources */,
-				AA54D59417A9416F79F4C120 /* [CP] Embed Pods Frameworks */,
-				042CE9C42B9D5F0373172745 /* [CP] Copy Pods Resources */,
+				EA4FF0C54B67503CC5E9C672 /* [CP] Embed Pods Frameworks */,
+				E2E39E17D3F939069D90826E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -236,12 +236,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F74B3E0E20682B4A000695BB /* Build configuration list for PBXNativeTarget "Whats your guess?Tests" */;
 			buildPhases = (
-				FC4E7DC023493AB756CA5754 /* [CP] Check Pods Manifest.lock */,
+				452CBEFCCF9D984E4C21785E /* [CP] Check Pods Manifest.lock */,
 				F74B3DF320682B4A000695BB /* Sources */,
 				F74B3DF420682B4A000695BB /* Frameworks */,
 				F74B3DF520682B4A000695BB /* Resources */,
-				CE9DCFF8379BFC077F3C0268 /* [CP] Embed Pods Frameworks */,
-				0164BAAF7DF5AD2905811AE2 /* [CP] Copy Pods Resources */,
+				51284CAFC0706C81FB7B6938 /* [CP] Embed Pods Frameworks */,
+				5C8145CFEEC70AF9FD740FBA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -257,12 +257,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F74B3E1120682B4A000695BB /* Build configuration list for PBXNativeTarget "Whats your guess?UITests" */;
 			buildPhases = (
-				8A057A0D81FDACEA6FD867CC /* [CP] Check Pods Manifest.lock */,
+				845C82A951D3C616013C618A /* [CP] Check Pods Manifest.lock */,
 				F74B3DFE20682B4A000695BB /* Sources */,
 				F74B3DFF20682B4A000695BB /* Frameworks */,
 				F74B3E0020682B4A000695BB /* Resources */,
-				B00B22EC4BA2D3346664D13B /* [CP] Embed Pods Frameworks */,
-				CE5CFA59889FDE620D4F8482 /* [CP] Copy Pods Resources */,
+				AB832D624FF2C40008D35259 /* [CP] Embed Pods Frameworks */,
+				ECF0D1DBEE6598D0AB3AA2BE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -326,7 +326,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F74B3DF120682B4A000695BB /* LaunchScreen.storyboard in Resources */,
-				F74B3E1820682D19000695BB /* NumberBoard.xib in Resources */,
 				F74B3DEE20682B4A000695BB /* Assets.xcassets in Resources */,
 				F74B3DEC20682B4A000695BB /* Main.storyboard in Resources */,
 			);
@@ -349,136 +348,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0164BAAF7DF5AD2905811AE2 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Whats your guess?Tests/Pods-Whats your guess?Tests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		042CE9C42B9D5F0373172745 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Whats your guess?/Pods-Whats your guess?-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8A057A0D81FDACEA6FD867CC /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Whats your guess?UITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		AA54D59417A9416F79F4C120 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Whats your guess?/Pods-Whats your guess?-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/RandomColorSwift/RandomColorSwift.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RandomColorSwift.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Whats your guess?/Pods-Whats your guess?-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B00B22EC4BA2D3346664D13B /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Whats your guess?UITests/Pods-Whats your guess?UITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CE5CFA59889FDE620D4F8482 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Whats your guess?UITests/Pods-Whats your guess?UITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CE9DCFF8379BFC077F3C0268 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Whats your guess?Tests/Pods-Whats your guess?Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F0899D94EF4C52A3B9C1563A /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Whats your guess?-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FC4E7DC023493AB756CA5754 /* [CP] Check Pods Manifest.lock */ = {
+		452CBEFCCF9D984E4C21785E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -496,6 +366,143 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		51284CAFC0706C81FB7B6938 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Whats your guess?Tests/Pods-Whats your guess?Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		56AF4F32DE7B1254E140187F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Whats your guess?-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5C8145CFEEC70AF9FD740FBA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Whats your guess?Tests/Pods-Whats your guess?Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		845C82A951D3C616013C618A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Whats your guess?UITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB832D624FF2C40008D35259 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Whats your guess?UITests/Pods-Whats your guess?UITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E2E39E17D3F939069D90826E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Whats your guess?/Pods-Whats your guess?-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA4FF0C54B67503CC5E9C672 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Whats your guess?/Pods-Whats your guess?-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AWSAuthCore/AWSAuthCore.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSCore/AWSCore.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSDynamoDB/AWSDynamoDB.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSMobileClient/AWSMobileClient.framework",
+				"${BUILT_PRODUCTS_DIR}/RandomColorSwift/RandomColorSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSAuthCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSDynamoDB.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSMobileClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RandomColorSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Whats your guess?/Pods-Whats your guess?-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ECF0D1DBEE6598D0AB3AA2BE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Whats your guess?UITests/Pods-Whats your guess?UITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -504,10 +511,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F74B3DE920682B4A000695BB /* GameViewController.swift in Sources */,
+				F7817EA2206DCF8E00BAF5DF /* GameEntryViewController.swift in Sources */,
 				F74B3DE720682B4A000695BB /* AppDelegate.swift in Sources */,
 				F728ED9E206AD721008FFB88 /* GameCard.swift in Sources */,
-				F74B3E1A206830CE000695BB /* NumberBoard.swift in Sources */,
 				F7D1570A2069F893001DE39E /* Game.swift in Sources */,
+				F7F14881206C995D0062816B /* GameFinishedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -671,7 +679,7 @@
 		};
 		F74B3E0C20682B4A000695BB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 59E769C8EFB35C68456BB43B /* Pods-Whats your guess?.debug.xcconfig */;
+			baseConfigurationReference = B1EF1A33BEAB0D7D38CFD49A /* Pods-Whats your guess?.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -687,7 +695,7 @@
 		};
 		F74B3E0D20682B4A000695BB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FAF91C19F8ED3E1C8259588B /* Pods-Whats your guess?.release.xcconfig */;
+			baseConfigurationReference = 6807AD991C87F1DD1B39AF91 /* Pods-Whats your guess?.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -703,7 +711,7 @@
 		};
 		F74B3E0F20682B4A000695BB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 81BE848B599679A89852C8DE /* Pods-Whats your guess?Tests.debug.xcconfig */;
+			baseConfigurationReference = F560CE1002C2DC225EBC0A57 /* Pods-Whats your guess?Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -721,7 +729,7 @@
 		};
 		F74B3E1020682B4A000695BB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CF174AD2B57BAF6921AD0D75 /* Pods-Whats your guess?Tests.release.xcconfig */;
+			baseConfigurationReference = CA5FF7DB92E5D88DA0213C9D /* Pods-Whats your guess?Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -739,7 +747,7 @@
 		};
 		F74B3E1220682B4A000695BB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AA7797C84272AE19BE522617 /* Pods-Whats your guess?UITests.debug.xcconfig */;
+			baseConfigurationReference = A65F4C02DDE2AD13812D7148 /* Pods-Whats your guess?UITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -756,7 +764,7 @@
 		};
 		F74B3E1320682B4A000695BB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 61B8517318E4637B892BFC7A /* Pods-Whats your guess?UITests.release.xcconfig */;
+			baseConfigurationReference = 23F5B092E2D4988A762E2920 /* Pods-Whats your guess?UITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

@@ -15,11 +15,13 @@ class GameViewController: UIViewController {
    @IBOutlet weak var stackOne: UIStackView!, stackTwo: UIStackView!,
    stackThree: UIStackView!, stackFour: UIStackView!
 
-   var stacksArray : [UIStackView]!, gameCardViews : [UIView]!
+   var stacksArray : [UIStackView]!, gameCardViews : [UIView]!, flippedIndices : [Int]!
    
    override func viewDidLoad() {
 
       super.viewDidLoad()
+
+      setNeedsStatusBarAppearanceUpdate()
 
       game = Game()
 
@@ -36,9 +38,14 @@ class GameViewController: UIViewController {
       // Dispose of any resources that can be recreated.
    }
 
+   override var preferredStatusBarStyle: UIStatusBarStyle {
+      return .lightContent
+   }
+
    func setGameCards()  {
       stacksArray = [stackOne, stackTwo, stackThree, stackFour]
       gameCardViews = [UIView]()
+      flippedIndices = [Int]()
 
       for stackView in stacksArray {
          for cardView in stackView.subviews  {
@@ -52,23 +59,65 @@ class GameViewController: UIViewController {
 
    func setCardColors()   {
       for index in 0...gameCardViews.count-1 {
-         gameCardViews[index].backgroundColor = UIColor.gray
+         if game.cards[index].playable {
+            gameCardViews[index].backgroundColor = UIColor.gray
+         }
       }
    }
 
    func addListeners()  {
 
-      for view in gameCardViews {
-         let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(handleFlip))
-         view.addGestureRecognizer(gestureRecognizer)
+      for index in 0...gameCardViews.count-1 {
+         if game.cards[index].playable {
+            let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(handleFlip))
+            gameCardViews[index].addGestureRecognizer(gestureRecognizer)
+         }
       }
 
    }
 
    @objc func handleFlip(_ recognizer:UITapGestureRecognizer) {
+
       let view = recognizer.view!
       let index = gameCardViews.index(of: view)!
-      view.backgroundColor = game.cards[index].color
+      let flipCard = game.shouldFlip(card: game.cards[index])
+
+      if flipCard {
+         flippedIndices.append(index)
+         view.backgroundColor = game.cards[index].color
+      }
+
+      if game.flippedCards == 2 && flippedIndices.count == 2 {
+
+         let cardOne = self.flippedIndices[0]
+         let cardTwo = self.flippedIndices[1]
+         let successfulMatch = self.game.checkIfMatch(cardOne: cardOne, cardTwo: cardTwo)
+         if successfulMatch {
+         }  else  {
+            self.gameCardViews[cardOne].backgroundColor = UIColor.gray
+            self.gameCardViews[cardTwo].backgroundColor = UIColor.gray
+         }
+
+         self.flippedIndices.removeAll()
+
+      }
+
+      if game.succesfulMatches == 16 {
+         game.endGame()
+         performSegue(withIdentifier: "GameFinishedSegue", sender: self)
+      }
+
+
+   }
+
+   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+      if(segue.identifier == "GameFinishedSegue")   {
+         if let finishedVC = segue.destination as? GameFinishedViewController {
+            if let time = game.totalTime  {
+               finishedVC.totalTime = time
+            }
+         }
+      }
    }
 
 

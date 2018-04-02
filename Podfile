@@ -7,7 +7,8 @@ target 'Whats your guess?' do
 
   # Pods for Whats your guess?
   pod 'RandomColorSwift'
-
+  pod 'AWSMobileClient', '~> 2.6.13'
+   pod 'AWSDynamoDB', '~> 2.6.13'
 
   target 'Whats your guess?Tests' do
     inherit! :search_paths
