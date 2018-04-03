@@ -32,11 +32,12 @@ class GameFinishedViewController: UIViewController {
       }
    }
 
-   @IBAction func submitScore(_ sender: Any) {
+   @IBAction func endGame(_ sender: Any) {
 
       let storyboard = UIStoryboard(name: "Main", bundle: nil)
       let entryVC = storyboard.instantiateViewController(withIdentifier: "GameEntryViewController") as! GameEntryViewController
       self.present(entryVC, animated: true, completion: nil)
+
 
    }
 

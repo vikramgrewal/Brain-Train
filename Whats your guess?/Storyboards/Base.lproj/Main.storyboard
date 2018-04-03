@@ -34,7 +34,7 @@
                                 <rect key="frame" x="141" y="587" width="93" height="30"/>
                                 <state key="normal" title="Submit Score"/>
                                 <connections>
-                                    <action selector="submitScore:" destination="bfF-ja-54Y" eventType="touchUpInside" id="8NS-Pi-BFx"/>
+                                    <action selector="endGame:" destination="bfF-ja-54Y" eventType="touchUpInside" id="8NS-Pi-BFx"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -64,14 +64,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="zsM-KY-Abk">
-                                <rect key="frame" x="0.0" y="447" width="375" height="220"/>
+                                <rect key="frame" x="0.0" y="445" width="375" height="222"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xql-bf-LX1">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="110"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="222"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mnn-jt-kIr" userLabel="Play Game">
-                                                <rect key="frame" x="20" y="20" width="335" height="70"/>
-                                                <color key="backgroundColor" red="0.52126432229999997" green="1" blue="0.74104378660000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <rect key="frame" x="20" y="20" width="335" height="182"/>
+                                                <color key="backgroundColor" red="0.23127005590491542" green="0.82340577411167515" blue="0.47444071819240724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="Play Game">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
@@ -88,35 +88,9 @@
                                             <constraint firstAttribute="trailing" secondItem="mnn-jt-kIr" secondAttribute="trailing" constant="20" id="nK9-UA-SvP"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c5M-J8-bwG">
-                                        <rect key="frame" x="0.0" y="110" width="375" height="110"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lOO-F4-NX2" userLabel="View Best Times">
-                                                <rect key="frame" x="20" y="20" width="335" height="70"/>
-                                                <color key="backgroundColor" red="0.25742124129999999" green="0.47820602909999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <state key="normal" title="View Best Times">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                            </button>
-                                        </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="lOO-F4-NX2" secondAttribute="trailing" constant="20" id="2Mb-cL-GlY"/>
-                                            <constraint firstItem="lOO-F4-NX2" firstAttribute="top" secondItem="c5M-J8-bwG" secondAttribute="top" constant="20" id="4Kg-ET-3sY"/>
-                                            <constraint firstAttribute="bottom" secondItem="lOO-F4-NX2" secondAttribute="bottom" constant="20" id="GOH-rG-dIL"/>
-                                            <constraint firstItem="lOO-F4-NX2" firstAttribute="leading" secondItem="c5M-J8-bwG" secondAttribute="leading" constant="20" id="wDH-su-YIk"/>
-                                        </constraints>
-                                    </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="Xql-bf-LX1" secondAttribute="trailing" id="9vm-Fa-ige"/>
-                                    <constraint firstItem="Xql-bf-LX1" firstAttribute="leading" secondItem="zsM-KY-Abk" secondAttribute="leading" id="FoX-zT-meS"/>
-                                    <constraint firstAttribute="bottom" secondItem="c5M-J8-bwG" secondAttribute="bottom" id="Ll4-JV-ILI"/>
-                                    <constraint firstAttribute="trailing" secondItem="c5M-J8-bwG" secondAttribute="trailing" id="a5d-gF-j96"/>
-                                    <constraint firstItem="c5M-J8-bwG" firstAttribute="height" secondItem="Xql-bf-LX1" secondAttribute="height" id="cVQ-CO-2Mi"/>
-                                    <constraint firstItem="Xql-bf-LX1" firstAttribute="top" secondItem="zsM-KY-Abk" secondAttribute="top" id="ci5-rW-LR0"/>
-                                    <constraint firstItem="c5M-J8-bwG" firstAttribute="top" secondItem="Xql-bf-LX1" secondAttribute="bottom" id="gXH-HG-YJo"/>
-                                    <constraint firstItem="c5M-J8-bwG" firstAttribute="leading" secondItem="zsM-KY-Abk" secondAttribute="leading" id="sVy-51-F8R"/>
+                                    <constraint firstItem="Xql-bf-LX1" firstAttribute="height" secondItem="zsM-KY-Abk" secondAttribute="height" multiplier="0.5" id="tDe-bZ-6cW"/>
                                 </constraints>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K2d-14-S3I">
@@ -138,10 +112,10 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Od-W0-fRa">
-                                <rect key="frame" x="16" y="240" width="343" height="207"/>
+                                <rect key="frame" x="16" y="240" width="343" height="205"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="brainLogo" translatesAutoresizingMaskIntoConstraints="NO" id="W61-zF-MLv">
-                                        <rect key="frame" x="0.0" y="0.0" width="343" height="207"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="205"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -155,7 +129,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="zsM-KY-Abk" firstAttribute="height" secondItem="eKA-iG-R2P" secondAttribute="height" multiplier="0.33" id="1xD-9J-bAn"/>
+                            <constraint firstItem="zsM-KY-Abk" firstAttribute="height" secondItem="eKA-iG-R2P" secondAttribute="height" multiplier="0.333" id="1xD-9J-bAn"/>
                             <constraint firstItem="8xs-m2-jxZ" firstAttribute="trailing" secondItem="K2d-14-S3I" secondAttribute="trailing" constant="16" id="DLr-co-W8f"/>
                             <constraint firstItem="K2d-14-S3I" firstAttribute="top" secondItem="8xs-m2-jxZ" secondAttribute="top" id="KBC-99-5pm"/>
                             <constraint firstItem="0Od-W0-fRa" firstAttribute="top" secondItem="K2d-14-S3I" secondAttribute="bottom" id="MfE-Pm-sxw"/>
