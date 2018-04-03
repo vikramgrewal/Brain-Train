@@ -31,8 +31,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="99e-Oa-SCk">
-                                <rect key="frame" x="141" y="587" width="93" height="30"/>
-                                <state key="normal" title="Submit Score"/>
+                                <rect key="frame" x="10" y="609" width="355" height="48"/>
+                                <color key="backgroundColor" red="1" green="0.24398357435338458" blue="0.25451626040641984" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="15" maxX="0.0" maxY="15"/>
+                                <state key="normal" title="End Game"/>
                                 <connections>
                                     <action selector="endGame:" destination="bfF-ja-54Y" eventType="touchUpInside" id="8NS-Pi-BFx"/>
                                 </connections>
@@ -40,9 +43,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="99e-Oa-SCk" firstAttribute="centerX" secondItem="fea-yE-zKg" secondAttribute="centerX" id="3hX-E3-jTL"/>
                             <constraint firstItem="Edd-SI-rQd" firstAttribute="centerX" secondItem="fea-yE-zKg" secondAttribute="centerX" id="4nf-Zz-29P"/>
-                            <constraint firstItem="WKI-41-jTc" firstAttribute="bottom" secondItem="99e-Oa-SCk" secondAttribute="bottom" constant="50" id="Zns-iY-suB"/>
+                            <constraint firstItem="99e-Oa-SCk" firstAttribute="leading" secondItem="WKI-41-jTc" secondAttribute="leading" constant="10" id="G3H-t7-0cd"/>
+                            <constraint firstItem="WKI-41-jTc" firstAttribute="trailing" secondItem="99e-Oa-SCk" secondAttribute="trailing" constant="10" id="JJE-OX-UAt"/>
+                            <constraint firstItem="WKI-41-jTc" firstAttribute="bottom" secondItem="99e-Oa-SCk" secondAttribute="bottom" constant="10" id="O9i-Qt-ixA"/>
                             <constraint firstItem="Edd-SI-rQd" firstAttribute="centerY" secondItem="fea-yE-zKg" secondAttribute="centerY" id="dJi-of-ue6"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="WKI-41-jTc"/>
@@ -63,84 +67,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="zsM-KY-Abk">
-                                <rect key="frame" x="0.0" y="445" width="375" height="222"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xql-bf-LX1">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="222"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mnn-jt-kIr" userLabel="Play Game">
-                                                <rect key="frame" x="20" y="20" width="335" height="182"/>
-                                                <color key="backgroundColor" red="0.23127005590491542" green="0.82340577411167515" blue="0.47444071819240724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <state key="normal" title="Play Game">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                                <connections>
-                                                    <segue destination="BYZ-38-t0r" kind="show" id="RNp-oN-U0d"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstItem="mnn-jt-kIr" firstAttribute="leading" secondItem="Xql-bf-LX1" secondAttribute="leading" constant="20" id="M9X-f8-F7E"/>
-                                            <constraint firstAttribute="bottom" secondItem="mnn-jt-kIr" secondAttribute="bottom" constant="20" id="Y0Z-fa-Af1"/>
-                                            <constraint firstItem="mnn-jt-kIr" firstAttribute="top" secondItem="Xql-bf-LX1" secondAttribute="top" constant="20" id="cHV-0j-HDF"/>
-                                            <constraint firstAttribute="trailing" secondItem="mnn-jt-kIr" secondAttribute="trailing" constant="20" id="nK9-UA-SvP"/>
-                                        </constraints>
-                                    </view>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="Xql-bf-LX1" firstAttribute="height" secondItem="zsM-KY-Abk" secondAttribute="height" multiplier="0.5" id="tDe-bZ-6cW"/>
-                                </constraints>
-                            </stackView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K2d-14-S3I">
-                                <rect key="frame" x="16" y="20" width="343" height="220"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Brain Train" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cCw-ta-Zs3">
-                                        <rect key="frame" x="0.0" y="0.0" width="343" height="220"/>
-                                        <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="50"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="cCw-ta-Zs3" secondAttribute="bottom" id="Bhd-jj-0Gs"/>
-                                    <constraint firstItem="cCw-ta-Zs3" firstAttribute="leading" secondItem="K2d-14-S3I" secondAttribute="leading" id="I63-d9-fA3"/>
-                                    <constraint firstItem="cCw-ta-Zs3" firstAttribute="top" secondItem="K2d-14-S3I" secondAttribute="top" id="ZEy-qc-bfI"/>
-                                    <constraint firstAttribute="trailing" secondItem="cCw-ta-Zs3" secondAttribute="trailing" id="nli-72-RBo"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Od-W0-fRa">
-                                <rect key="frame" x="16" y="240" width="343" height="205"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="brainLogo" translatesAutoresizingMaskIntoConstraints="NO" id="W61-zF-MLv">
-                                        <rect key="frame" x="0.0" y="0.0" width="343" height="205"/>
-                                    </imageView>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstItem="W61-zF-MLv" firstAttribute="top" secondItem="0Od-W0-fRa" secondAttribute="top" id="QzB-xH-i53"/>
-                                    <constraint firstAttribute="trailing" secondItem="W61-zF-MLv" secondAttribute="trailing" id="ekv-12-q6b"/>
-                                    <constraint firstAttribute="bottom" secondItem="W61-zF-MLv" secondAttribute="bottom" id="flG-2B-gWw"/>
-                                    <constraint firstItem="W61-zF-MLv" firstAttribute="leading" secondItem="0Od-W0-fRa" secondAttribute="leading" id="sjf-6K-XNf"/>
-                                </constraints>
-                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mnn-jt-kIr" userLabel="Play Game">
+                                <rect key="frame" x="10" y="575" width="355" height="42"/>
+                                <color key="backgroundColor" red="0.23127005590491542" green="0.82340577411167515" blue="0.47444071819240724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="12" maxX="0.0" maxY="12"/>
+                                <state key="normal" title="Play Game">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="RNp-oN-U0d"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Brain Train" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cCw-ta-Zs3">
+                                <rect key="frame" x="10" y="70" width="355" height="66"/>
+                                <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="brainLogo" translatesAutoresizingMaskIntoConstraints="NO" id="W61-zF-MLv">
+                                <rect key="frame" x="94" y="149.5" width="187.5" height="367"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="zsM-KY-Abk" firstAttribute="height" secondItem="eKA-iG-R2P" secondAttribute="height" multiplier="0.333" id="1xD-9J-bAn"/>
-                            <constraint firstItem="8xs-m2-jxZ" firstAttribute="trailing" secondItem="K2d-14-S3I" secondAttribute="trailing" constant="16" id="DLr-co-W8f"/>
-                            <constraint firstItem="K2d-14-S3I" firstAttribute="top" secondItem="8xs-m2-jxZ" secondAttribute="top" id="KBC-99-5pm"/>
-                            <constraint firstItem="0Od-W0-fRa" firstAttribute="top" secondItem="K2d-14-S3I" secondAttribute="bottom" id="MfE-Pm-sxw"/>
-                            <constraint firstItem="K2d-14-S3I" firstAttribute="leading" secondItem="8xs-m2-jxZ" secondAttribute="leading" constant="16" id="Nfk-Dd-1w8"/>
-                            <constraint firstItem="zsM-KY-Abk" firstAttribute="trailing" secondItem="8xs-m2-jxZ" secondAttribute="trailing" id="SEV-M8-arG"/>
-                            <constraint firstItem="0Od-W0-fRa" firstAttribute="leading" secondItem="8xs-m2-jxZ" secondAttribute="leading" constant="16" id="ZVX-HT-nhf"/>
-                            <constraint firstItem="zsM-KY-Abk" firstAttribute="leading" secondItem="8xs-m2-jxZ" secondAttribute="leading" id="bmD-ch-A1k"/>
-                            <constraint firstItem="zsM-KY-Abk" firstAttribute="top" secondItem="0Od-W0-fRa" secondAttribute="bottom" id="ja1-7j-Ezr"/>
-                            <constraint firstItem="8xs-m2-jxZ" firstAttribute="trailing" secondItem="0Od-W0-fRa" secondAttribute="trailing" constant="16" id="kDz-st-Zfc"/>
-                            <constraint firstItem="zsM-KY-Abk" firstAttribute="bottom" secondItem="8xs-m2-jxZ" secondAttribute="bottom" id="ppc-Ca-oZN"/>
-                            <constraint firstItem="K2d-14-S3I" firstAttribute="height" secondItem="eKA-iG-R2P" secondAttribute="height" multiplier="0.33" id="yJN-H7-CRW"/>
+                            <constraint firstItem="cCw-ta-Zs3" firstAttribute="top" secondItem="8xs-m2-jxZ" secondAttribute="top" constant="50" id="3en-S2-cac"/>
+                            <constraint firstItem="W61-zF-MLv" firstAttribute="centerY" secondItem="eKA-iG-R2P" secondAttribute="centerY" id="5w5-op-Sen"/>
+                            <constraint firstItem="W61-zF-MLv" firstAttribute="width" secondItem="eKA-iG-R2P" secondAttribute="width" multiplier="0.5" id="7Ha-g8-2dc"/>
+                            <constraint firstItem="W61-zF-MLv" firstAttribute="height" secondItem="eKA-iG-R2P" secondAttribute="height" multiplier="0.55" id="X4i-SM-jzk"/>
+                            <constraint firstItem="mnn-jt-kIr" firstAttribute="leading" secondItem="8xs-m2-jxZ" secondAttribute="leading" constant="10" id="XhL-cq-x05"/>
+                            <constraint firstItem="8xs-m2-jxZ" firstAttribute="trailing" secondItem="mnn-jt-kIr" secondAttribute="trailing" constant="10" id="eLx-QD-OMH"/>
+                            <constraint firstItem="8xs-m2-jxZ" firstAttribute="bottom" secondItem="mnn-jt-kIr" secondAttribute="bottom" constant="50" id="hLs-lZ-uct"/>
+                            <constraint firstItem="8xs-m2-jxZ" firstAttribute="trailing" secondItem="cCw-ta-Zs3" secondAttribute="trailing" constant="10" id="hbA-yi-TcS"/>
+                            <constraint firstItem="W61-zF-MLv" firstAttribute="centerX" secondItem="eKA-iG-R2P" secondAttribute="centerX" id="mrz-NA-bvb"/>
+                            <constraint firstItem="cCw-ta-Zs3" firstAttribute="leading" secondItem="8xs-m2-jxZ" secondAttribute="leading" constant="10" id="t6u-Bk-BPf"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="8xs-m2-jxZ"/>
                     </view>
