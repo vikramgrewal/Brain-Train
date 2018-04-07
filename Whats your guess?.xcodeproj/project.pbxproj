@@ -469,18 +469,10 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Whats your guess?/Pods-Whats your guess?-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/AWSAuthCore/AWSAuthCore.framework",
-				"${BUILT_PRODUCTS_DIR}/AWSCore/AWSCore.framework",
-				"${BUILT_PRODUCTS_DIR}/AWSDynamoDB/AWSDynamoDB.framework",
-				"${BUILT_PRODUCTS_DIR}/AWSMobileClient/AWSMobileClient.framework",
 				"${BUILT_PRODUCTS_DIR}/RandomColorSwift/RandomColorSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSAuthCore.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCore.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSDynamoDB.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSMobileClient.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RandomColorSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;

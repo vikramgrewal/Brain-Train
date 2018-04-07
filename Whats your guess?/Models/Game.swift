@@ -17,9 +17,7 @@ class Game  {
    var startTime : Date!, totalTime : Double?
 
    init()   {
-
       createGame()
-
    }
 
    private func createGame()  {
